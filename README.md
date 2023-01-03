@@ -1,13 +1,30 @@
 # Linux_Monitoring_2
 
-### Учебный проект. Сбор информации о системе с помощью bash\shell скриптов.
+### Учебный проект. Продолжаем изучать Linux и пишем bash\shell скрипты.
 
 #### Description:
-01. [Проба пера](https://github.com/GTimsan/Linux_Monitoring_1/tree/main/src/01)    
-02. [Сбор информации о системе](https://github.com/GTimsan/Linux_Monitoring_1/tree/main/src/02) с последующим сохранением в файл  
-![02_task](./images/02.png)
-03. [Визуальное оформление вывода](https://github.com/GTimsan/Linux_Monitoring_1/tree/main/src/03) для скрипта 02 с четырьмя пераметрами от 1 до 6 (1 - white, 2 - red, 3 - green, 4 - blue, 5 – purple, 6 - black)  
-![03_task](./images/03.png)  
-04. [Визуальное оформление вывода](https://github.com/GTimsan/Linux_Monitoring_1/tree/main/src/04) параметры считываются из файла  
-05. [Исследование директории](https://github.com/GTimsan/Linux_Monitoring_1/tree/main/src/05)
-![05_task](./images/05.png)
+01. [Генератор файлов](https://github.com/GTimsan/Linux_Monitoring_2/tree/main/src/01) с 6 параметрами и записать логи по созданным файлам.  
+    > Параметр 1 - это абсолютный путь. 
+    > Параметр 2 - количество вложенных папок. 
+    > Параметр 3 - список букв английского алфавита, используемый в названии папок (не более 7 знаков). 
+    > Параметр 4 - количество файлов в каждой созданной папке. 
+    > Параметр 5 - список букв английского алфавита, используемый в имени файла и расширении (не более 7 знаков для имени, не более 3 знаков для расширения). 
+    > Параметр 6 - размер файлов (в килобайтах, но не более 100).  
+
+02. [Засорение файловой системы](https://github.com/GTimsan/Linux_Monitoring_2/tree/main/src/02) с 3 параметрами и запись логов.  
+    > Скрипт должен остановить работу, когда в файловой системе (в разделе /) останется 1 Гб свободного места.  
+
+03. [Очистка файловой системы](https://github.com/GTimsan/Linux_Monitoring_2/tree/main/src/03) с одним параметром от 1 до 3(способы удаления).  
+04. [Генератор логов](https://github.com/GTimsan/Linux_Monitoring_2/tree/main/src/04) генерирующий 5 файлов логов nginx в combined формате.  
+05. [Мониторинг](https://github.com/GTimsan/Linux_Monitoring_2/tree/main/src/05)  
+    > Написать bash-скрипт для разбора логов nginx из Части 4 через awk.
+      Скрипт запускается с 1 параметром, который принимает значение 1, 2, 3 или 4.
+      В зависимости от значения параметра вывести:
+      -  Все записи, отсортированные по коду ответа
+      -  Все уникальные IP, встречающиеся в записях
+      -  Все запросы с ошибками (код ответа - 4хх или 5хх)
+      -  Все уникальные IP, которые встречаются среди ошибочных запросов  
+06. [GoAccess](https://github.com/GTimsan/Linux_Monitoring_2/tree/main/src/06) c помощью утилиты получить ту же информацию, что и в Части 05  
+07. [Prometheus и Grafana](https://github.com/GTimsan/Linux_Monitoring_2/tree/main/src/07)  
+08. [Готовый дашборд](https://github.com/GTimsan/Linux_Monitoring_2/tree/main/src/08)  
+09. [Свой node_exporter](https://github.com/GTimsan/Linux_Monitoring_2/tree/main/src/09)  
