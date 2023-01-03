@@ -1,6 +1,6 @@
 # Linux_Monitoring_2
 
-### Учебный проект. Продолжаем изучать Linux и пишем bash\shell скрипты.
+### Учебный проект. Продолжаем изучать Linux и пишем bash\shell скрипты + Prometheus, Grafana, GoAccess.
 
 #### Description:
 01. [Генератор файлов](https://github.com/GTimsan/Linux_Monitoring_2/tree/main/src/01) с 6 параметрами и записать логи по созданным файлам.  
